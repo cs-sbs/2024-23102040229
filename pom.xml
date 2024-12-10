@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.shaoyuwang</groupId>
+    <artifactId>library_system</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 项目的一些基本属性 -->
+    <properties>
+        <!-- compiler : 编译器 -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <!-- dependency : 依靠、依赖 -->
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version> <!-- 或者最新版本 -->
+        </dependency>
+
+        <!--mybatis依赖-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.20</version> <!-- 使用适当版本 -->
+        </dependency>
+
+
+
+        <!-- Apache POI 依赖：用于操作 Excel 文件 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.3</version> <!-- 使用适当版本 -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version> <!-- 使用适当版本 -->
+        </dependency>
+        <!-- 如果需要处理 .xlsx 文件，则还需要以下依赖 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>4.1.2</version> <!-- 注意这个版本可能需要与 poi-ooxml 版本匹配 -->
+        </dependency>
+        <!-- 对于XML格式的Excel文件（.xlsx），你也可能需要这个依赖 -->
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>5.1.1</version> <!-- 使用适当版本 -->
+        </dependency>
+        <!-- 如果要处理旧版的 .xls 文件，则只需要 poi 依赖即可 -->
+
+        <!-- MyBatis-Spring Integration -->
+
+    </dependencies>
+
+</project>
